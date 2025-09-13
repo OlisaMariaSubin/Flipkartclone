@@ -1,0 +1,27 @@
+*{
+    padding: 0%;
+    margin:0%;
+}
+
+#outerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+#innerbox{
+    display: flex;
+    background-color: white;
+    width: 60%;
+    height: 500px;
+}
+.leftinnerbox{
+    background-color: #2874F0;
+    color: white;
+    font-family: sans-serif;
+}
+.rightinnerbox{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
