@@ -25,6 +25,3 @@
     display: flex;
     flex-direction: column;
 }
-.continue:hover{
-    cursor:pointer;
-}

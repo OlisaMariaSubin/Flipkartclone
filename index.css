@@ -47,8 +47,8 @@
     justify-content: space-between;
     margin: auto;
     gap: 40px;                     
-    padding: 15px 0;               /* top-bottom spacing */
-    background-color: #fff;        /* white background */
+    padding: 15px 0;
+    background-color: #fff;
 }
 
 #categories > div> img{
@@ -88,10 +88,10 @@ body{
     top: 100%;             
     left: 0;
     background-color: #fff;
-    min-width: 140px;       /* make menu a bit wider */
+    min-width: 140px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     border-radius: 6px;
-    z-index: 1000;          /* ensure it stays on top */
+    z-index: 1000;
     flex-direction: column;
 }
 
@@ -108,7 +108,22 @@ body{
     background-color: #f5f5f5;
 }
 
-/* show menu on hover */
 .dropdown:hover .dropdown-content {
     display: flex;
+}
+li{
+    list-style: none;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around; 
+    padding-bottom: 18px;
+    padding-top: 20px;
+}
+
+.heading{
+    color:grey;
 }

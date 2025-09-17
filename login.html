@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="./signup.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
@@ -16,25 +16,22 @@
                 <p style="margin-top: 20px;font-weight: bold;font-size: 30px;padding:12px;">Looks like you're new here!</p>
                 <p style="margin-top: 20px;font-weight: normal;font-size: 20px;padding:12px;">Sign up with your mobile number to get started</p>
                 <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png" alt="login" style="max-width: 100%; height: auto;padding-top: 160px;padding-left:100px">
-            </div>    
+            </div>
             <div class="rightinnerbox">
                 <div style="margin-top: 100px;display: flex;justify-content: center;width: 90%;height:30px;">
-                    <input id="phone" type="number"placeholder="Enter Mobile number"style="border: none;border-bottom: 1px solid #ccc;"/>
+                    <input id="mobile" type="number" placeholder="Enter Mobile number"style="border: none;border-bottom: 1px solid #ccc;"/>
                 </div>
                 <div style="margin-top: 20px;display: flex;justify-content: center;width: 90%;height:30px;">    
-                    <input id="Name" type="text" placeholder="Enter your Name"style="border: none;border-bottom: 1px solid #ccc;"/>
-                </div>
-                <div style="margin-top: 20px;display: flex;justify-content: center;width: 90%;height:30px;">    
-                    <input id="Pass" type="password" placeholder="Enter your Password"style="border: none;border-bottom: 1px solid #ccc;"/>
+                    <input id="pass" type="password" placeholder="Enter your Password"style="border: none;border-bottom: 1px solid #ccc;"/>
                 </div>
                 <div style="text-align: center;margin-top: 10px;">
-                    <p style="font-size: 10px;padding-left: 5px;padding-top: 10px">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
+                    <p style="font-size: 10px;padding-left: 5px;padding-top: 10px;">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
                 </div>
                 <div style="margin-top: 10px;display: flex;justify-content: center;">
-                    <button class="continue" style="border: none;background-color: #FB641B;color: white;font-weight: bold;font-size: 15px;width:90%;padding: 9px;border-radius: 10px;" onclick="Signup()">CONTINUE</button>
+                    <button style="border: none;background-color: #FB641B;color: white;font-weight: bold;font-size: 15px;width:90%;padding: 9px;border-radius: 10px;" onclick="Login()">Login</button>
                 </div>
                 <div style="margin-top: 10px;display: flex;justify-content: center;">
-                    <button onclick="window.location.href='login.html'"style="border: none;background-color: whitesmoke;color: #2874F0;font-weight: bold;font-size: 15px;width:90%;padding: 9px;border-radius: 10px;">Existing User? Login</button>
+                    <button onclick= "window.location.href='signup.html'"style="border: none;background-color: whitesmoke;color: #2874F0;font-weight: bold;font-size: 15px;width:90%;padding: 9px;border-radius: 10px;">Not an Existing User? Signup</button>
                 </div>
             </div>
             
@@ -47,4 +44,4 @@
         $("#container").load("./navbar.html");
     });
 </script>
-<script src="signup.js"></script>
+<script src="login.js"></script>

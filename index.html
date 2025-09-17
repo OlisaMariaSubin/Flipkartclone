@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart</title>
-    <link rel="stylesheet" href="./index.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <style>
-
-        *{
-            padding: 0;
-            margin: 0;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-    <!-- inline stylesheet -->
-        <!-- internal css -->
-         <!-- id, class --> 
-    <div id="container"></div>      
-    <div id="box2">     
-          <!-- categories -->
-           <section id="categories">
-           </section>
-    </div>       
+  <!-- navbar -->
+  <div id="container"></div>      
+
+  <!-- categories -->
+  <div id="box2">     
+    <section id="categories"></section>
+  </div>     
+
+  <!-- carousel with indicators -->
+  <section id="carousel1">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators (dots) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      </div>
+
+      <!-- Carousel Images -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/3abc11594efaf6dd.jpg?q=60" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/4c91a17c9010ed4e.jpeg?q=60" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/db942a8618f0bb26.jpeg?q=60" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/668af8f377c83289.jpeg?q=60" class="d-block w-100" alt="Slide 4">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/fb6af354b4cf44ad.jpg?q=60" class="d-block w-100" alt="Slide 5">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/8b6ca008fd2f7d2b.jpg?q=60" class="d-block w-100" alt="Slide 6">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/691548a5edd7449b.jpeg?q=60" class="d-block w-100" alt="Slide 7">
+        </div>
+        <div class="carousel-item">
+          <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/99cfe31c9ac32d0b.jpg?q=60" class="d-block w-100" alt="Slide 8">
+        </div>
+      </div>
+
+      <!-- Prev/Next Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </section>
+  <section id="footer">
+    <div>
+        <li class="heading">About</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Clear Trip</li>
+    </div>
+    <div>
+        <li class="heading">Help</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Clear Trip</li>
+    </div>
+    <div>
+        <li class="heading">Consumer Policy</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Clear Trip</li>
+    </div>
+    <div>
+        <li class="heading">Social</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Clear Trip</li>
+    </div>
+    <div>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Clear Trip</li>
+    </div>
+    
+    <div>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Career</li>
+        <li>Flipkart Stories</li>
+        <li>Clear Trip</li>
+    </div>
+  </section>
+
 </body>
 </html>
 <script>
     $(function(){
-        $("#container").load("./navbar.html");
+      $("#container").load("./navbar.html");
     });
-</script>
-<script src="index.js"></script>
+  </script>
+  <script src="index.js"></script>
